@@ -1,7 +1,4 @@
-package com.ignatev.spring;
-
-import org.springframework.context.annotation.Scope;
-import org.springframework.stereotype.Component;
+package com.ignatev.spring_core;
 
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;

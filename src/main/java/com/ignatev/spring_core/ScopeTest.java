@@ -1,16 +1,16 @@
-package com.ignatev.spring;
+package com.ignatev.spring_core;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-public class ConfigWithAnnotations1 {
+public class ScopeTest {
     public static void main(String[] args) {
         ClassPathXmlApplicationContext context =
                 new ClassPathXmlApplicationContext("applicationContext3.xml");
 
-        Person person = context.getBean("person", Person.class);
-        System.out.println(person.getAge());
-        System.out.println(person.getSurname());
-        person.callYourPet();
+        Dog myDog1 = context.getBean("dog", Dog.class);
+        Dog myDog2 = context.getBean("dog", Dog.class);
+
+        System.out.println(myDog1 == myDog2);
 
         context.close();
     }

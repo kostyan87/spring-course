@@ -1,4 +1,4 @@
-package com.ignatev.spring;
+package com.ignatev.spring_core;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 

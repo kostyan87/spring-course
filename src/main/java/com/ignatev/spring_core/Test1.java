@@ -1,4 +1,4 @@
-package com.ignatev.spring;
+package com.ignatev.spring_core;
 
 /**
  * Hello world!

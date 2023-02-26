@@ -1,6 +1,4 @@
-package com.ignatev.spring;
-
-import org.springframework.stereotype.Component;
+package com.ignatev.spring_core;
 
 //@Component
 public class Cat implements Pet {

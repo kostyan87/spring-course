@@ -9,7 +9,7 @@
 
 
     <bean id="myPet"
-          class="com.ignatev.spring.Dog"
+          class="com.ignatev.spring_core.Dog"
           init-method="init"
           destroy-method="destroy">
     </bean>

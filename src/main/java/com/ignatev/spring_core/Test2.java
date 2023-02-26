@@ -1,13 +1,14 @@
-package com.ignatev.spring;
+package com.ignatev.spring_core;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-public class Test6 {
+public class Test2 {
     public static void main(String[] args) {
         ClassPathXmlApplicationContext context =
-                new ClassPathXmlApplicationContext("applicationContext2.xml");
+                new ClassPathXmlApplicationContext("applicationContext.xml");
 
-        Dog dog = context.getBean("myPet", Dog.class);
+        Pet pet = context.getBean("myPet", Pet.class);
+        pet.say();
 
         context.close();
     }
